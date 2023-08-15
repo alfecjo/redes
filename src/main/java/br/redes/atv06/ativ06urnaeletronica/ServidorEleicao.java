@@ -15,6 +15,10 @@ import java.util.TimerTask;
 public class ServidorEleicao extends UnicastRemoteObject implements ServicoEleicao {
 
     private static final long serialVersionUID = 1L;
+
+    private static void exit(int i) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     private final Map<String, Integer> votos = new HashMap<>();
 
     public ServidorEleicao() throws RemoteException {
@@ -25,6 +29,15 @@ public class ServidorEleicao extends UnicastRemoteObject implements ServicoEleic
 
     @Override
     public synchronized void enviarVoto(String nomeCandidato, int numeroVotos) throws RemoteException {
+        if (nomeCandidato.isEmpty()) {
+            nomeCandidato = "Votos em branco";
+        } else if (nomeCandidato.equalsIgnoreCase("@")) {
+            nomeCandidato = "Votos nulos";
+        }
+
+        if (numeroVotos < 0) {
+            numeroVotos = 0;
+        }
         votos.put(nomeCandidato, votos.getOrDefault(nomeCandidato, 0) + numeroVotos);
     }
 
@@ -62,6 +75,7 @@ public class ServidorEleicao extends UnicastRemoteObject implements ServicoEleic
             System.out.println("Servidor pronto para receber votos.");
         } catch (MalformedURLException | RemoteException e) {
             System.out.println("error: " + e.getMessage());
+            System.out.println("Não prossiga com as entradas. Servidor já está em uso em outra janela.");
         }
     }
 }
