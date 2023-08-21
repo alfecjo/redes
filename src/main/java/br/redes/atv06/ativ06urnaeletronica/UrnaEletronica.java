@@ -35,6 +35,8 @@ public class UrnaEletronica {
 
                     ilustra();
 
+                    servico.enviarVoto(nomeCandidato, numeroVotos);
+                    
                     System.out.println("Voto enviado!");
 
                     System.out.print("Deseja continuar a fornecer votos? (S)im ou (N)ão... ");
