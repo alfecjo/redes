@@ -15,15 +15,15 @@
 
 ## Instalação
 
-1. Clone the repository:
+1. Clone o repositório ou baixe o arquivo .zip:
 
 ```bash
 git clone (https://github.com/alfecjo/redes.git)
 ```
 ## Uso
 
-1. Execute em sua IDE de preferência, contudo, o desenvolvimento foi feito no VSCode! Você pode começar com: mvn install, no diretório raiz e onde se encontra o
-   arquivo pom.xml, para baixar as dependências, caso seja necessário.
+1. Execute em sua IDE de preferência. Contudo, o desenvolvimento foi feito no VSCode! Você pode começar com: "mvn install", no diretório raiz, que é onde se encontra o
+   arquivo pom.xml. Desta forma, serão baixadas as dependências, caso seja necessário.
 
 ## Contribuição
 
