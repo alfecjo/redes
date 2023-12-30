@@ -20,12 +20,9 @@
 ```bash
 git clone (https://github.com/alfecjo/redes.git)
 ```
-
-Execute: mvn install
-
 ## Uso
 
-1. Execute em sua IDE de preferência, contudo, o desenvolvimento foi feito no VSCode!
+1. Execute em sua IDE de preferência, contudo, o desenvolvimento foi feito no VSCode! Você pode começar com: mvn install, para baixar as dependências.
 
 ## Contribuição
 
