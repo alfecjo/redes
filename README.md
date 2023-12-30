@@ -22,7 +22,8 @@ git clone (https://github.com/alfecjo/redes.git)
 ```
 ## Uso
 
-1. Execute em sua IDE de preferência, contudo, o desenvolvimento foi feito no VSCode! Você pode começar com: mvn install, para baixar as dependências.
+1. Execute em sua IDE de preferência, contudo, o desenvolvimento foi feito no VSCode! Você pode começar com: mvn install, no diretório raiz e onde se encontra o
+   arquivo pom.xml, para baixar as dependências, caso seja necessário.
 
 ## Contribuição
 
