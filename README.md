@@ -6,7 +6,7 @@
 ## Enunciado da atividade
 👉 A máquina cliente deverá solicitar:
 - Digite um CPF para verificação:
-- O usuário deverá entrar um número de CPF. + <Enter>
+- O usuário deverá entrar um número de CPF.
 
 👉 A máquina que é o servidor receberá o CPF e verificará:
 - Se o número é válido ou inválido.
