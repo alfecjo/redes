@@ -7,7 +7,7 @@
 
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 
-## Table of Contents
+## Tabela de Conteúdos
 
 - [Instalação](#Instalação)
 - [Uso](#Uso)
@@ -18,7 +18,7 @@
 1. Clone o repositório ou baixe o arquivo .zip:
 
 ```bash
-git clone (https://github.com/alfecjo/redes.git)
+git clone https://github.com/alfecjo/redes.git
 ```
 ## Uso
 
