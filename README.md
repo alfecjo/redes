@@ -45,8 +45,7 @@ git clone https://github.com/alfecjo/redes.git
 ```
 ## Uso
 
-1. Execute em sua IDE de preferência. Contudo, o desenvolvimento foi feito no VSCode! Você pode começar com: "mvn install", no diretório raiz, que é onde se encontra o
-   arquivo pom.xml. Desta forma, serão baixadas as dependências, caso seja necessário.
+1. Execute em sua IDE de preferência. Contudo, o desenvolvimento foi feito no NetBeans, ideal JDK 11 ao 13! Você pode começar com: "mvn install", no diretório raiz, que é onde se    encontra o arquivo pom.xml. Desta forma, serão baixadas as dependências, caso seja necessário.
 2. A idéia central aqui é que usando SOCKET, você instale o Cliente em uma máquina, o Servidor em outra e através do wifi ou rede cabeada, de um PC você forneça o CPF
    (Cliente) e do outro (Servidor) é onde reside os métodos que validam o CPF e retornam se é válido ou não para o Cliente usando Socket...
 3. Para executar crie duas estruturas idênticas em duas máquinas distintas. Ambas devem estar usando a mesma rede Wifi. Na primeira máquina elimine o arquivo Cliente.java.
