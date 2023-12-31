@@ -51,6 +51,8 @@ git clone https://github.com/alfecjo/redes.git
 3. Para executar crie duas estruturas idênticas em duas máquinas distintas. Ambas devem estar usando a mesma rede Wifi. Na primeira máquina elimine o arquivo Cliente.java.
    Na segunda máquina elimine o arquivo Servidor.java, desta forma você terá uma estrutura baixada do repositório, considerando a máquina1 apenas com Cliente.java e máquina2
    apenas com Servidor.java. Execute primeiro o Servidor.java na máquina2. Em seguida execute o Cliente na máquina1. Forneça o CPF e a máquina2 Servidor deve validá-lo.
+4. Caso tenha o Java instalado, você precisa apenas executar os arquivos Cliente.class e Servidor.class em máquinas distintas e terá o mesmo resultado do ítem 3.
+5. Quanto ao código relativo a validação do CPF é possível encontrar informações mais detalhadas na internet. Haja visto que o foco aqui é o emprego do Socket.
 
 ## Contribuição
 
