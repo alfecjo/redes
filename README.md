@@ -9,7 +9,7 @@
 
 😵 Objetivo:
 
-Neste ponto do curso vamos abordar o conceito de uma aplicação Cliente-Servidor e explicar como ele está relacionado à programação de redes. Na verdade, trata-se do exercício da branch servidor-rede, contudo, esta versão foi alterada para receber conexões de múltiplas aplicações que estejam conectadas a ela. 
+Neste ponto do curso vamos abordar o conceito de uma aplicação Cliente-Servidor e explicar como ele está relacionado à programação de redes. Na verdade, trata-se do exercício da branch servidor-redes, contudo, esta versão foi alterada para receber conexões de múltiplas aplicações que estejam conectadas a ela. 
 O foco na branch servidor-rede é que a aplicação recebe apenas uma conexão por vez e para que receba outra, a primeira deve ser fechada. Nesta branch, o número de conexões está sujeito a quantidade de memória.
 
 🧭 Sobre a aplicação...
