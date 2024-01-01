@@ -1,9 +1,9 @@
-package br.redes.servidorredes;
+package br.redes.atv04;
+
 
 import java.io.Serializable;
 
 public class Pessoa implements Serializable {
-
     private final String nome;
     private final int idade;
 
