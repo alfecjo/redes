@@ -56,7 +56,7 @@ git clone https://github.com/alfecjo/redes.git
 ## Uso
 
 1. Execute em sua IDE de preferência. Contudo, o desenvolvimento foi feito no NetBeans, ideal JDK 11 ao 13! Você pode começar com: "mvn install", no diretório raiz, que é onde se    encontra o arquivo pom.xml. Desta forma, serão baixadas as dependências, caso seja necessário.
-2. A idéia central aqui é que usando a biblioteca Swing, você instale o Cliente (Form e classe) em uma máquina, o Servidor em outra e através do wifi ou rede cabeada, possa passar objetos.
+2. A idéia central aqui é que usando a biblioteca Swing, com a criação de dois projetos simples, o primeiro, Cliente composto por ClienteForm.form, ClienteForm.java e Pessoa.java, em uma máquina, o segundo, Servidor.java em outra e através do wifi ou rede cabeada, possa passar objetos.
 3. Caso tenha o Java instalado, você precisa apenas executar os arquivos .class em máquinas distintas.
 5. Quanto ao código relativo a construção de Forms e demais elementos gráficos, é possível encontrar informações mais detalhadas na internet. Haja visto que o foco aqui é a passagem de objetos pela rede e o uso de Socket.
 
