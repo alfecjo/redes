@@ -3,7 +3,7 @@
 ## Este material foi desenvolvido em resposta a disciplina 'Redes', a qual faz parte do curso de Pós Graduação em Tecnologia Java, ministrado pela Universidade Tecnológica Federal do Paraná.
 🎉 Os projetos, são exercícios solicitados ao longo do curso que juntos perfazem a nota que compõem a média final.
 
-🥋 Se você está entrando no Java agora, vou deixar um comentário apenas para orientá-lo, caso considere o código deste exercício estranho. Este exercício, foi considerado pelo professor e os demais colegas como MEDIANO. (_😎tirei nota máxima_), contudo, o assunto aqui é REDES. Isso, por si só, não é nada convencional para desenvolvedores acostumados com devWeb. Caso seja seu caso, considere que REDES é uma potencialidade do Java explorada por poucos, más que pode perfeitamente unir forças com o desenvolvimento web. É perfeitamente possível que uma aplicação Java-Spring possua funcionalidades associadas as bibliotecas de REDE para aumentar sua eficiência.
+🥋 Se você está entrando no Java agora, vou deixar um comentário apenas para orientá-lo, caso considere o código deste exercício estranho. Este exercício, foi considerado pelo professor e os demais colegas como MEDIANO. (_😎tirei nota máxima_), contudo, o assunto aqui é REDES. Isso, por si só, não é nada convencional para desenvolvedores acostumados com devWeb. Caso se identifique, considere que REDES é uma potencialidade do Java explorada por poucos, más que pode perfeitamente unir forças com o desenvolvimento web. É perfeitamente possível que uma aplicação Java-Spring possua funcionalidades associadas as bibliotecas de REDE para aumentar sua eficiência.
 
 ## Servidor de Redes
 
@@ -12,7 +12,7 @@
 Neste ponto do curso vamos abordar o conceito de uma aplicação Cliente-Servidor e explicar como ele está relacionado à programação de redes..
 
 🧭 Sobre a aplicação...
- Uma aplicação Swing Cliente-Servidor envolve a criação de uma interface gráfica de usuário (GUI) usando a biblioteca Swing no lado do cliente e a implementação de um servidor que recebe e processa solicitações do cliente. Vamos dividir isso em duas partes: Cliente e Servidor.
+ Uma aplicação Swing Cliente-Servidor envolve a criação de uma interface gráfica de usuário (GUI) usando a biblioteca Swing no lado do cliente e a implementação de um servidor que recebe e processa solicitações do cliente. Vamos dividir isso em duas partes, Cliente e Servidor.
 
 ### Cliente Swing:
 - Interface Gráfica de Usuário (GUI): Use a biblioteca Swing para criar uma interface gráfica interativa. Componentes Swing incluem botões, campos de texto, áreas de texto, etc.
@@ -56,9 +56,9 @@ git clone https://github.com/alfecjo/redes.git
 ## Uso
 
 1. Execute em sua IDE de preferência. Contudo, o desenvolvimento foi feito no NetBeans, ideal JDK 11 ao 13! Você pode começar com: "mvn install", no diretório raiz, que é onde se    encontra o arquivo pom.xml. Desta forma, serão baixadas as dependências, caso seja necessário.
-2. A idéia central aqui é que usando a biblioteca Swing, você instale o Cliente em uma máquina, o Servidor em outra e através do wifi ou rede cabeada, possa passar objetos.
-3. Caso tenha o Java instalado, você precisa apenas executar os arquivos Cliente.class e Servidor.class em máquinas distintas e terá o mesmo resultado do ítem 3.
-5. Quanto ao código relativo a construção de Forms e demais elementos gráficos, é possível encontrar informações mais detalhadas na internet. Haja visto que o foco aqui é a passagem de objetos pela rede.
+2. A idéia central aqui é que usando a biblioteca Swing, você instale o Cliente (Form e classe) em uma máquina, o Servidor em outra e através do wifi ou rede cabeada, possa passar objetos.
+3. Caso tenha o Java instalado, você precisa apenas executar os arquivos .class em máquinas distintas.
+5. Quanto ao código relativo a construção de Forms e demais elementos gráficos, é possível encontrar informações mais detalhadas na internet. Haja visto que o foco aqui é a passagem de objetos pela rede e o uso de Socket.
 
 ## Contribuição
 
