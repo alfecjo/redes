@@ -49,6 +49,7 @@ cliente. O cliente deve receber um aviso do servidor, informando que os dados fo
 transmitidos corretamente, mostrando isso em uma TextArea.
 
 Utilize a figura abaixo como modelo para o cliente:
+![swing](./swing.jpeg)
 
 # Tecnologia utilizada:
 
