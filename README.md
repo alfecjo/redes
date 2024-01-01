@@ -29,7 +29,7 @@ servidor. O servidor deve exibir em seu console de execução, os dados recebido
 cliente. O cliente deve receber um aviso do servidor, informando que os dados foram 
 transmitidos corretamente, mostrando isso em uma TextArea.
 
-Use conexão do localhost, ou seja, o IP 127.0.0.1, para a conexão clienteservidor. Não use o endereçamento de sua LAN (ex. 192.168.10.10). A porta fica a 
+Use conexão do localhost, ou seja, o IP 127.0.0.1, para a conexão cliente-servidor. Não use o endereçamento de sua LAN (ex. 192.168.10.10). A porta fica a 
 critério do aluno, desde que não seja pertencente às portas baixas ou portas 
 reservadas.
 
