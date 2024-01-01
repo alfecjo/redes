@@ -38,7 +38,7 @@ Usa a referência para chamar métodos remotos.
 5. Inicie o Registry: Certifique-se de iniciar o registro RMI (ou usar um já em execução) antes de executar o servidor e cliente.
 
 ## Enunciado da atividade
-👉 Desenvolva uma aplicação em que um cliente, utilizando tecnologia Java RMI (Remote Method Invocation), uma calculadora com as quatro operações básicas...
+👉 Desenvolva uma aplicação em que um cliente, utilizando tecnologia Java RMI (Remote Method Invocation), construa uma calculadora com as quatro operações básicas...
 
 # Tecnologia utilizada:
 
