@@ -5,6 +5,33 @@
 
 🥋 Se você está entrando no Java agora, vou deixar um comentário apenas para orientá-lo, caso considere o código deste exercício estranho. Este exercício, foi considerado pelo professor e os demais colegas como MEDIANO. (_😎tirei nota máxima_), contudo, o assunto aqui é REDES. Isso, por si só, não é nada convencional para desenvolvedores acostumados com devWeb. Caso seja seu caso, considere que REDES é uma potencialidade do Java explorada por poucos, más que pode perfeitamente unir forças com o desenvolvimento web. É perfeitamente possível que uma aplicação Java-Spring possua funcionalidades associadas as bibliotecas de REDE para aumentar sua eficiência.
 
+## Valida CPF
+
+😵 Objetivo:
+
+Neste ponto do curso vamos abordar o conceito de Socket e explicar como ele está relacionado à programação de redes..
+📶 O que é um Socket?
+- Um socket é um ponto final para enviar ou receber dados através de uma rede em um programa de computador. Ele fornece uma abstração para comunicação entre processos, seja em uma máquina única ou através de uma rede. Os sockets são um mecanismo fundamental para a comunicação entre diferentes dispositivos em uma rede.
+
+🧭 Tipos de Sockets:
+- Sockets de Fluxo (Stream Sockets):
+- Utilizados com o protocolo TCP (Transmission Control Protocol).
+- Proporcionam uma comunicação bidirecional contínua.
+- Garantem a entrega ordenada e sem perda de dados.
+- Sockets de Datagrama (Datagram Sockets):
+- Utilizados com o protocolo UDP (User Datagram Protocol).
+- Oferecem uma comunicação de envio sem conexão, onde os dados podem ser perdidos ou chegar fora de ordem.
+
+🛠️ Como os Sockets Funcionam:
+
+- Servidor:
+- O servidor cria um socket e aguarda por conexões.
+- Quando uma conexão é recebida, o servidor cria um novo socket dedicado para a comunicação com o cliente.
+
+- Cliente:
+- O cliente cria um socket e tenta se conectar ao servidor.
+- Se a conexão for estabelecida com sucesso, o cliente e o servidor podem trocar dados.
+
 ## Enunciado da atividade
 👉 A máquina cliente deverá solicitar:
 - Digite um CPF para verificação:
