@@ -10,7 +10,7 @@
 😵 Objetivo:
 
 Neste ponto do curso vamos abordar o conceito de uma aplicação Cliente-Servidor e explicar como ele está relacionado à programação de redes. Na verdade, trata-se do exercício da branch servidor-redes, contudo, esta versão foi alterada para receber conexões de múltiplas aplicações que estejam conectadas a ela. 
-O foco na branch servidor-rede é que a aplicação recebe apenas uma conexão por vez e para que receba outra, a primeira deve ser fechada. Nesta branch, o número de conexões está sujeito a quantidade de memória.
+O foco na branch servidor-redes é que a aplicação recebe apenas uma conexão por vez e para que receba outra, a primeira deve ser fechada. Nesta branch, o número de conexões está sujeito a quantidade de memória.
 
 🧭 Sobre a aplicação...
  Uma aplicação Swing Cliente-Servidor envolve a criação de uma interface gráfica de usuário (GUI) usando a biblioteca Swing no lado do cliente e a implementação de um servidor que recebe e processa solicitações do cliente. Vamos dividir isso em duas partes, Cliente e Servidor.
@@ -24,11 +24,13 @@ O foco na branch servidor-rede é que a aplicação recebe apenas uma conexão p
 - Use um loop para aceitar várias conexões.
 
 ## Enunciado da atividade
-👉 Desenvolva uma aplicação em que um cliente, utilizando componentes gráficos da 
-biblioteca Swing, transmita o objeto Pessoa (atributos: nome e idade) para o 
+👉 Desenvolva uma aplicação em que vários clientes, utilizando componentes gráficos da 
+biblioteca Swing, transmitam o objetom Pessoa (atributos: nome e idade) para o 
 servidor. O servidor deve exibir em seu console de execução, os dados recebidos do 
 cliente. O cliente deve receber um aviso do servidor, informando que os dados foram 
 transmitidos corretamente, mostrando isso em uma TextArea.
+
+🎯 O Servidor deve ser capaz de lidar com vários Clientes de forma concomitante...
 
 Use conexão do localhost, ou seja, o IP 127.0.0.1, para a conexão cliente-servidor. Não use o endereçamento de sua LAN (ex. 192.168.10.10). A porta fica a 
 critério do aluno, desde que não seja pertencente às portas baixas ou portas 
