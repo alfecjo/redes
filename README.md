@@ -25,7 +25,7 @@ O foco na branch servidor-redes é que a aplicação recebe apenas uma conexão 
 
 ## Enunciado da atividade
 👉 Desenvolva uma aplicação em que vários clientes, utilizando componentes gráficos da 
-biblioteca Swing, transmitam o objetom Pessoa (atributos: nome e idade) para o 
+biblioteca Swing, transmitam o objeto Pessoa (atributos: nome e idade) para o 
 servidor. O servidor deve exibir em seu console de execução, os dados recebidos do 
 cliente. O cliente deve receber um aviso do servidor, informando que os dados foram 
 transmitidos corretamente, mostrando isso em uma TextArea.
