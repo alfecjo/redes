@@ -30,7 +30,7 @@ Usa a classe java.rmi.registry.Registry para registrar objetos remotos.
 Obtém uma referência para o objeto remoto no registro.
 Usa a referência para chamar métodos remotos.
 
-- Passos Gerais para Usar RMI:
+### Passos Gerais para Usar RMI:
 1. Defina a Interface Remota: Crie uma interface que estenda Remote e declare os métodos que podem ser chamados remotamente.
 2. Implemente a Interface: Implemente a interface remota em uma classe que herde de UnicastRemoteObject.
 3. Crie o Servidor: No servidor, crie uma instância da implementação remota, registre-a no registro RMI e aguarde por chamadas remotas.
