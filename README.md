@@ -1,9 +1,9 @@
 # Java Aplicado a Redes de Computadores..
 
 ## Este material foi desenvolvido em resposta a disciplina 'Redes', a qual faz parte do curso de Pós Graduação em Tecnologia Java, ministrado pela Universidade Tecnológica Federal do Paraná.
-🎉 Este exercício foi retirado da prova de avaliação do curso de REDES. Ao longo do curso, a média final é composta por variados exercícios (50% questionários + aplicações) + (nota da avaliação-prova 50%).
+🎉 Os projetos, são exercícios solicitados ao longo do curso que juntos perfazem a nota que compõem a média final.
 
-🥋 Se você está entrando no Java agora, vou deixar um comentário apenas para orientá-lo, caso considere o código deste exercício estranho. Este exercício, foi considerado pelo professor e os demais colegas como HARD + em função do tempo para elaboração, pois, trata-se de exercício da prova. (_😎tirei nota máxima_), contudo, o assunto aqui é REDES. Isso, por si só, não é nada convencional para desenvolvedores acostumados com devWeb. Caso se identifique, considere que REDES é uma potencialidade do Java explorada por poucos, más que pode perfeitamente unir forças com o desenvolvimento web. É perfeitamente possível que uma aplicação Java-Swing + Java-Spring, possua funcionalidades associadas as bibliotecas de REDE (lan - local area network), inclusive RMI para aumentar sua eficiência.
+🥋 Se você está entrando no Java agora, vou deixar um comentário apenas para orientá-lo, caso considere o código deste exercício estranho. Este exercício, foi considerado pelo professor e os demais colegas como HARD. (_😎tirei nota máxima_), contudo, o assunto aqui é REDES. Isso, por si só, não é nada convencional para desenvolvedores acostumados com devWeb. Caso se identifique, considere que REDES é uma potencialidade do Java explorada por poucos, más que pode perfeitamente unir forças com o desenvolvimento web. É perfeitamente possível que uma aplicação Java-Swing + Java-Spring, possua funcionalidades associadas as bibliotecas de REDE (lan - local area network), inclusive RMI para aumentar sua eficiência.
 
 ## Servidor de Redes
 
@@ -38,7 +38,25 @@ Usa a referência para chamar métodos remotos.
 5. Inicie o Registry: Certifique-se de iniciar o registro RMI (ou usar um já em execução) antes de executar o servidor e cliente.
 
 ## Enunciado da atividade
-👉 Desenvolva uma aplicação em que um cliente, utilizando tecnologia Java RMI (Remote Method Invocation), possa executar uma calculadora com as quatro operações básicas, sendo que os cálculos sejam executados pelo Cliente de forma remota...
+👉 Desenvolva uma aplicação baseado na situação-problema: uma cidade está realizando uma eleição. Você é o desenvolvedor que projetará uma aplicação capaz de receber os votos de cada urna espalhada na cidade. Muita atenção neste trecho do enunciado. Estamos emulando uma eleição real. Tal como as urnas eletrônicas funcionam. Lembre-se que programas existem para solucionar situações da vida real, utilizando estudos de caso na vida real. 
+
+Assim, pede-se:
+
+- O servidor RMI deverá estar apto a realizar duas funções:
+    - Contar todos os votos;
+    - Receber votos (contendo os nomes dos candidatos e os números de votos);
+
+- Cada urna (cliente RMI) deverá enviar os nomes e o número de votos de cada candidato para o servidor.  Esses nomes deverão ser entrados no console. Os números de votos também deverão ser entrados pelo console.
+
+- O servidor deverá exibir a apuração de votos atualizada a cada 5 segundos....
+
+  ### Alguns pontos importantes:
+  - Sua aplicação deverá receber candidatos do mundo real (João, Maria, Vitor, etc.)
+  - O usuário (o avaliador) deverá interagir com seu programa. O nome do candidato (ou o número do candidato) deverá ser entrado (lembre-se que na urna eletrônica real votamos por     números, mas aqui pode entrar também o nome). Os votos também.
+  - Não pré-programe inserção automática de candidatos e votos, no código.
+  - O usuário (o avaliador) deverá observar as atualizações no output do servidor que será atualizado a cada 5 segundos.
+  - Não quebre padrões de programação. Exemplo: Se seus programas sempre possuem interface em português, não utilize outro idioma. Não faria o menor sentido corporativo, um programador   passar a exibir na sua interface, o idioma russo ou árabe, depois que apresentou 05 programas em português. Isso mesmo com um programa funcionando e atendendo os requisitos solicitados.  Quebrar padrões desfavorece o programador.
+  - Evite que seu programa seja um robô que faça tudo automaticamente, com parâmetros passados automaticamente, imperceptíveis ao usuário. Lembre-se que este programa interage.
 
 # Tecnologia utilizada:
 
