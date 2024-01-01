@@ -1,2 +1,5 @@
-br\servidor\Servidor.class
-br\servidor\Cliente.class
+br\redes\servidorredes\FormClient.class
+br\redes\servidorredes\Pessoa.class
+br\redes\servidorredes\FormClient$2.class
+br\redes\servidorredes\ServidorRedes.class
+br\redes\servidorredes\FormClient$1.class
