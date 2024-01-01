@@ -10,6 +10,7 @@
 😵 Objetivo:
 
 Neste ponto do curso vamos abordar o conceito de Socket e explicar como ele está relacionado à programação de redes..
+
 📶 O que é um Socket?
 - Um socket é um ponto final para enviar ou receber dados através de uma rede em um programa de computador. Ele fornece uma abstração para comunicação entre processos, seja em uma máquina única ou através de uma rede. Os sockets são um mecanismo fundamental para a comunicação entre diferentes dispositivos em uma rede.
 
@@ -23,11 +24,9 @@ Neste ponto do curso vamos abordar o conceito de Socket e explicar como ele est�
 - Oferecem uma comunicação de envio sem conexão, onde os dados podem ser perdidos ou chegar fora de ordem.
 
 🛠️ Como os Sockets Funcionam:
-
 - Servidor:
 - O servidor cria um socket e aguarda por conexões.
 - Quando uma conexão é recebida, o servidor cria um novo socket dedicado para a comunicação com o cliente.
-
 - Cliente:
 - O cliente cria um socket e tenta se conectar ao servidor.
 - Se a conexão for estabelecida com sucesso, o cliente e o servidor podem trocar dados.
