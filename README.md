@@ -5,6 +5,32 @@
 
 🥋 Se você está entrando no Java agora, vou deixar um comentário apenas para orientá-lo, caso considere o código deste exercício estranho. Este exercício, foi considerado pelo professor e os demais colegas como MEDIANO. (_😎tirei nota máxima_), contudo, o assunto aqui é REDES. Isso, por si só, não é nada convencional para desenvolvedores acostumados com devWeb. Caso seja seu caso, considere que REDES é uma potencialidade do Java explorada por poucos, más que pode perfeitamente unir forças com o desenvolvimento web. É perfeitamente possível que uma aplicação Java-Spring possua funcionalidades associadas as bibliotecas de REDE para aumentar sua eficiência.
 
+## Servidor de Redes
+
+😵 Objetivo:
+
+Neste ponto do curso vamos abordar o conceito de Socket e explicar como ele está relacionado à programação de redes..
+
+📶 O que é um Socket?
+- Um socket é um ponto final para enviar ou receber dados através de uma rede em um programa de computador. Ele fornece uma abstração para comunicação entre processos, seja em uma máquina única ou através de uma rede. Os sockets são um mecanismo fundamental para a comunicação entre diferentes dispositivos em uma rede.
+
+🧭 Tipos de Sockets:
+- Sockets de Fluxo (Stream Sockets):
+- Utilizados com o protocolo TCP (Transmission Control Protocol).
+- Proporcionam uma comunicação bidirecional contínua.
+- Garantem a entrega ordenada e sem perda de dados.
+- Sockets de Datagrama (Datagram Sockets):
+- Utilizados com o protocolo UDP (User Datagram Protocol).
+- Oferecem uma comunicação de envio sem conexão, onde os dados podem ser perdidos ou chegar fora de ordem.
+
+🛠️ Como os Sockets Funcionam:
+- Servidor:
+- O servidor cria um socket e aguarda por conexões.
+- Quando uma conexão é recebida, o servidor cria um novo socket dedicado para a comunicação com o cliente.
+- Cliente:
+- O cliente cria um socket e tenta se conectar ao servidor.
+- Se a conexão for estabelecida com sucesso, o cliente e o servidor podem trocar dados.
+
 ## Enunciado da atividade
 👉 A máquina cliente deverá solicitar:
 - Digite um CPF para verificação:
@@ -16,17 +42,13 @@
 - Se o CPF for inválido, o servidor deverá retornar a mensagem “Este CPF é inválido.”
 
 ## Regras para construir o programa
-- Faça apenas uma classe Servidor e uma classe Cliente. Não utilize nomes diferentes 
-destas classes, para facilitar a correção. O cliente tratará de capturar a entrada do 
-usuário, enviar o CPF; e, recuperar o CPF quando o servidor responder se o CPF é válido 
-ou inválido. O servidor tratará de receber o CPF que vem do cliente, tratar os dados, 
-conferindo se é um CPF genuíno ou não, e devolver o resultado
+Desenvolva uma aplicação em que um cliente, utilizando componentes gráficos da 
+biblioteca Swing, transmita o objeto Pessoa (atributos: nome e idade) para o 
+servidor. O servidor deve exibir em seu console de execução, os dados recebidos do 
+cliente. O cliente deve receber um aviso do servidor, informando que os dados foram 
+transmitidos corretamente, mostrando isso em uma TextArea.
 
-- Todo tratamento do CPF deverá ser feito no servidor. Não utilize nenhuma classe 
-externa auxiliar. O programa precisa interagir com o usuário via entrada do teclado. O 
-localhost, ou seja, o IP 127.0.0.1, deverá ser o IP entrado neste exercício e não o 
-endereçamento de sua LAN (ex. 192.168.10.10). A porta fica por conta do aluno, desde 
-que não seja pertencente às portas baixas ou portas reservadas.
+Utilize a figura abaixo como modelo para o cliente:
 
 # Tecnologia utilizada:
 
