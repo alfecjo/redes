@@ -9,44 +9,29 @@
 
 😵 Objetivo:
 
-Neste ponto do curso vamos abordar o conceito de Socket e explicar como ele está relacionado à programação de redes..
+Neste ponto do curso vamos abordar o conceito de uma aplicação Cliente-Servidor e explicar como ele está relacionado à programação de redes..
 
-📶 O que é um Socket?
-- Um socket é um ponto final para enviar ou receber dados através de uma rede em um programa de computador. Ele fornece uma abstração para comunicação entre processos, seja em uma máquina única ou através de uma rede. Os sockets são um mecanismo fundamental para a comunicação entre diferentes dispositivos em uma rede.
+🧭 Sobre a aplicação...
+ Uma aplicação Swing Cliente-Servidor envolve a criação de uma interface gráfica de usuário (GUI) usando a biblioteca Swing no lado do cliente e a implementação de um servidor que recebe e processa solicitações do cliente. Vamos dividir isso em duas partes: Cliente e Servidor.
 
-🧭 Tipos de Sockets:
-- Sockets de Fluxo (Stream Sockets):
-- Utilizados com o protocolo TCP (Transmission Control Protocol).
-- Proporcionam uma comunicação bidirecional contínua.
-- Garantem a entrega ordenada e sem perda de dados.
-- Sockets de Datagrama (Datagram Sockets):
-- Utilizados com o protocolo UDP (User Datagram Protocol).
-- Oferecem uma comunicação de envio sem conexão, onde os dados podem ser perdidos ou chegar fora de ordem.
+### Cliente Swing:
+- Interface Gráfica de Usuário (GUI): Use a biblioteca Swing para criar uma interface gráfica interativa. Componentes Swing incluem botões, campos de texto, áreas de texto, etc.
+- Conexão com o Servidor: Use classes como Socket para estabelecer uma conexão com o servidor. Envie e receba dados entre o cliente e o servidor.
 
-🛠️ Como os Sockets Funcionam:
-- Servidor:
-- O servidor cria um socket e aguarda por conexões.
-- Quando uma conexão é recebida, o servidor cria um novo socket dedicado para a comunicação com o cliente.
-- Cliente:
-- O cliente cria um socket e tenta se conectar ao servidor.
-- Se a conexão for estabelecida com sucesso, o cliente e o servidor podem trocar dados.
+### Servidor:
+- Servidor para Receber Conexões: Crie um servidor que aguarde a conexão de clientes.
+- Use um loop para aceitar várias conexões.
 
 ## Enunciado da atividade
-👉 A máquina cliente deverá solicitar:
-- Digite um CPF para verificação:
-- O usuário deverá entrar um número de CPF.
-
-👉 A máquina que é o servidor receberá o CPF e verificará:
-- Se o número é válido ou inválido.
-- Se o CPF for válido, o servidor deverá retornar a mensagem “Este CPF é válido” para o cliente.
-- Se o CPF for inválido, o servidor deverá retornar a mensagem “Este CPF é inválido.”
-
-## Regras para construir o programa
-Desenvolva uma aplicação em que um cliente, utilizando componentes gráficos da 
+👉 Desenvolva uma aplicação em que um cliente, utilizando componentes gráficos da 
 biblioteca Swing, transmita o objeto Pessoa (atributos: nome e idade) para o 
 servidor. O servidor deve exibir em seu console de execução, os dados recebidos do 
 cliente. O cliente deve receber um aviso do servidor, informando que os dados foram 
 transmitidos corretamente, mostrando isso em uma TextArea.
+
+Use conexão do localhost, ou seja, o IP 127.0.0.1, para a conexão clienteservidor. Não use o endereçamento de sua LAN (ex. 192.168.10.10). A porta fica a 
+critério do aluno, desde que não seja pertencente às portas baixas ou portas 
+reservadas.
 
 Utilize a figura abaixo como modelo para o cliente:
 ![swing](./swing.jpg)
@@ -71,13 +56,9 @@ git clone https://github.com/alfecjo/redes.git
 ## Uso
 
 1. Execute em sua IDE de preferência. Contudo, o desenvolvimento foi feito no NetBeans, ideal JDK 11 ao 13! Você pode começar com: "mvn install", no diretório raiz, que é onde se    encontra o arquivo pom.xml. Desta forma, serão baixadas as dependências, caso seja necessário.
-2. A idéia central aqui é que usando SOCKET, você instale o Cliente em uma máquina, o Servidor em outra e através do wifi ou rede cabeada, de um PC você forneça o CPF
-   (Cliente) e do outro (Servidor) é onde reside os métodos que validam o CPF e retornam se é válido ou não para o Cliente usando Socket...
-3. Para executar crie duas estruturas idênticas em duas máquinas distintas. Ambas devem estar usando a mesma rede Wifi. Na primeira máquina elimine o arquivo Cliente.java.
-   Na segunda máquina elimine o arquivo Servidor.java, desta forma você terá uma estrutura baixada do repositório, considerando a máquina1 apenas com Cliente.java e máquina2
-   apenas com Servidor.java. Execute primeiro o Servidor.java na máquina2. Em seguida execute o Cliente na máquina1. Forneça o CPF e a máquina2 Servidor deve validá-lo.
-4. Caso tenha o Java instalado, você precisa apenas executar os arquivos Cliente.class e Servidor.class em máquinas distintas e terá o mesmo resultado do ítem 3.
-5. Quanto ao código relativo a validação do CPF é possível encontrar informações mais detalhadas na internet. Haja visto que o foco aqui é o emprego do Socket.
+2. A idéia central aqui é que usando a biblioteca Swing, você instale o Cliente em uma máquina, o Servidor em outra e através do wifi ou rede cabeada, possa passar objetos.
+3. Caso tenha o Java instalado, você precisa apenas executar os arquivos Cliente.class e Servidor.class em máquinas distintas e terá o mesmo resultado do ítem 3.
+5. Quanto ao código relativo a construção de Forms e demais elementos gráficos, é possível encontrar informações mais detalhadas na internet. Haja visto que o foco aqui é a passagem de objetos pela rede.
 
 ## Contribuição
 
