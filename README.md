@@ -3,38 +3,42 @@
 ## Este material foi desenvolvido em resposta a disciplina 'Redes', a qual faz parte do curso de Pós Graduação em Tecnologia Java, ministrado pela Universidade Tecnológica Federal do Paraná.
 🎉 Os projetos, são exercícios solicitados ao longo do curso que juntos perfazem a nota que compõem a média final.
 
-🥋 Se você está entrando no Java agora, vou deixar um comentário apenas para orientá-lo, caso considere o código deste exercício estranho. Este exercício, foi considerado pelo professor e os demais colegas como HARD + em função do tempo, pois, trata-se de exercício da prova. (_😎tirei nota máxima_), contudo, o assunto aqui é REDES. Isso, por si só, não é nada convencional para desenvolvedores acostumados com devWeb. Caso se identifique, considere que REDES é uma potencialidade do Java explorada por poucos, más que pode perfeitamente unir forças com o desenvolvimento web e lan. É perfeitamente possível que uma aplicação Java-Swing + Java-Spring, possua funcionalidades associadas as bibliotecas de REDE para aumentar sua eficiência.
+🥋 Se você está entrando no Java agora, vou deixar um comentário apenas para orientá-lo, caso considere o código deste exercício estranho. Este exercício, foi considerado pelo professor e os demais colegas como HARD + em função do tempo para elaboração, pois, trata-se de exercício da prova. (_😎tirei nota máxima_), contudo, o assunto aqui é REDES. Isso, por si só, não é nada convencional para desenvolvedores acostumados com devWeb. Caso se identifique, considere que REDES é uma potencialidade do Java explorada por poucos, más que pode perfeitamente unir forças com o desenvolvimento web. É perfeitamente possível que uma aplicação Java-Swing + Java-Spring, possua funcionalidades associadas as bibliotecas de REDE (lan - local area network) para aumentar sua eficiência.
 
 ## Servidor de Redes
 
 😵 Objetivo:
 
-Neste ponto do curso vamos abordar o conceito de uma aplicação Cliente-Servidor e explicar como ele está relacionado à programação de redes..
+Neste ponto, vamos abordar o conceito de Java RMI (Remote Method Invocation) relacionado à programação de redes..
 
-🧭 Sobre a aplicação...
- Uma aplicação Swing Cliente-Servidor envolve a criação de uma interface gráfica de usuário (GUI) usando a biblioteca Swing no lado do cliente e a implementação de um servidor que recebe e processa solicitações do cliente. Vamos dividir isso em duas partes, Cliente e Servidor.
+🧭 Conceito:
+Java RMI (Remote Method Invocation) é uma tecnologia Java que permite a execução de métodos em objetos que residem em máquinas remotas, proporcionando assim a comunicação entre processos distribuídos em uma rede. Com o RMI, você pode invocar métodos de objetos remotos da mesma forma que invoca métodos locais.
 
-### Cliente Swing:
-- Interface Gráfica de Usuário (GUI): Use a biblioteca Swing para criar uma interface gráfica interativa. Componentes Swing incluem botões, campos de texto, áreas de texto, etc.
-- Conexão com o Servidor: Use classes como Socket para estabelecer uma conexão com o servidor. Envie e receba dados entre o cliente e o servidor.
+- Interface Remota:
+Define a interface que contém os métodos que podem ser chamados remotamente.
+Deve estender a interface java.rmi.Remote e cada método deve lançar java.rmi.RemoteException.
 
-### Servidor:
-- Servidor para Receber Conexões: Crie um servidor que aguarde a conexão de clientes.
-- Use um loop para aceitar várias conexões.
+- Implementação Remota:
+Implementa a interface remota.
+Herda da classe java.rmi.server.UnicastRemoteObject.
+
+- Servidor RMI:
+Registra uma instância do objeto remoto para torná-lo acessível para os clientes.
+Usa a classe java.rmi.registry.Registry para registrar objetos remotos.
+
+- Cliente RMI:
+Obtém uma referência para o objeto remoto no registro.
+Usa a referência para chamar métodos remotos.
+
+- Passos Gerais para Usar RMI:
+1. Defina a Interface Remota: Crie uma interface que estenda Remote e declare os métodos que podem ser chamados remotamente.
+2. Implemente a Interface: Implemente a interface remota em uma classe que herde de UnicastRemoteObject.
+3. Crie o Servidor: No servidor, crie uma instância da implementação remota, registre-a no registro RMI e aguarde por chamadas remotas.
+4. Crie o Cliente: No cliente, obtenha uma referência para o objeto remoto do registro RMI e chame os métodos remotos normalmente.
+5. Inicie o Registry: Certifique-se de iniciar o registro RMI (ou usar um já em execução) antes de executar o servidor e cliente.
 
 ## Enunciado da atividade
-👉 Desenvolva uma aplicação em que um cliente, utilizando componentes gráficos da 
-biblioteca Swing, transmita o objeto Pessoa (atributos: nome e idade) para o 
-servidor. O servidor deve exibir em seu console de execução, os dados recebidos do 
-cliente. O cliente deve receber um aviso do servidor, informando que os dados foram 
-transmitidos corretamente, mostrando isso em uma TextArea.
-
-Use conexão do localhost, ou seja, o IP 127.0.0.1, para a conexão cliente-servidor. Não use o endereçamento de sua LAN (ex. 192.168.10.10). A porta fica a 
-critério do aluno, desde que não seja pertencente às portas baixas ou portas 
-reservadas.
-
-Utilize a figura abaixo como modelo para o cliente:
-![swing](./swing.jpg)
+👉 Desenvolva uma aplicação em que um cliente, utilizando tecnologia Java RMI (Remote Method Invocation), uma calculadora com as quatro operações básicas...
 
 # Tecnologia utilizada:
 
