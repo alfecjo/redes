@@ -17,8 +17,9 @@ public class UrnaEletronica {
             ServicoEleicao servico = (ServicoEleicao) Naming.lookup("//localhost/eleicao");
             try ( Scanner scanner = new Scanner(System.in)) {
                 while (true) {
-                    System.out.print("\nPara votos em branco, apenas tecle <Enter> no campo: \"Nome do candidato: \".");
-                    System.out.print("\nPara votos nulos, apenas tecle \"@\" no campo: \"Nome do candidato: \" e tecle <Enter>.");
+                    System.out.print("\nPara votos em branco, apenas tecle <Enter> no campo: \"Nome do candidato: \", digite o número de votos e tecle <Enter>!");
+                    System.out.print("\nPara votos nulos, apenas tecle \"@\" no campo: \"Nome do candidato: \", tecle <Enter> e digite o número de votos e tecle <Enter>!");
+                    System.out.print("\nPara encerrar a aplicação, digite \"EXIT\" em \"Nome do candidato: \", tecle <Enter>, e digite 0(zero) para número de votos e tecle <Enter>!");
                     System.out.print("\nNome do candidato: ");
                     String nomeCandidato = scanner.nextLine();
 
@@ -30,8 +31,6 @@ public class UrnaEletronica {
                         System.out.println("Valor inválido para número de votos. Voto desconsiderado!");
                         continue;
                     }
-
-                    servico.enviarVoto(nomeCandidato, numeroVotos);
 
                     ilustra();
 
@@ -47,7 +46,7 @@ public class UrnaEletronica {
                 }
             }
         } catch (MalformedURLException | NotBoundException | RemoteException e) {
-            System.out.println("error: " + e.getMessage());
+            System.out.println("Servidor sendo encerrado!!!");
         }
     }
 

@@ -1,6 +1,7 @@
 package br.redes.atv06.ativ06urnaeletronica;
 
-import java.net.MalformedURLException;
+import java.io.File;
+import java.io.IOException;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.HashMap;
@@ -16,10 +17,29 @@ public class ServidorEleicao extends UnicastRemoteObject implements ServicoEleic
 
     private static final long serialVersionUID = 1L;
 
-    private static void exit(int i) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
     private final Map<String, Integer> votos = new HashMap<>();
+    
+    private static final String LOCK_FILE_PATH = "server.lock";
+
+    private static boolean checkLockFile() {
+        File lockFile = new File(LOCK_FILE_PATH);
+        return lockFile.exists();
+    }
+
+    private static void createLockFile() throws IOException {
+        File lockFile = new File(LOCK_FILE_PATH);
+        lockFile.createNewFile();
+    }
+
+    private static void deleteLockFile() {
+        File lockFile = new File(LOCK_FILE_PATH);
+        lockFile.delete();
+    }
+
+    private static void exit(int status) {
+        deleteLockFile();
+        System.exit(status);
+    }
 
     public ServidorEleicao() throws RemoteException {
         super();
@@ -33,6 +53,9 @@ public class ServidorEleicao extends UnicastRemoteObject implements ServicoEleic
             nomeCandidato = "Votos em branco";
         } else if (nomeCandidato.equalsIgnoreCase("@")) {
             nomeCandidato = "Votos nulos";
+        }else if(nomeCandidato.equalsIgnoreCase("EXIT")) {
+            System.out.println("Servidor encerrado pelo Cliente!!!");
+            exit(0);
         }
 
         if (numeroVotos < 0) {
@@ -66,16 +89,23 @@ public class ServidorEleicao extends UnicastRemoteObject implements ServicoEleic
             }
         }
     }
+    
+ public static void main(String[] args) {
+        if (checkLockFile()) {
+            System.out.println("A aplicação já está em execução. Esta instância será fechada!");
+            System.out.println("Abandonando a aplicação...");
+            System.exit(0);
+        }
 
-    public static void main(String[] args) {
         try {
+            createLockFile();
+
             ServidorEleicao servidor = new ServidorEleicao();
             java.rmi.registry.LocateRegistry.createRegistry(1099);
-            java.rmi.Naming.rebind("//localhost/eleicao", servidor);
+            java.rmi.Naming.rebind("//192.168.0.145/eleicao", servidor);
             System.out.println("Servidor pronto para receber votos.");
-        } catch (MalformedURLException | RemoteException e) {
-            System.out.println("error: " + e.getMessage());
-            System.out.println("Não prossiga com as entradas. Servidor já está em uso em outra janela.");
+        } catch (IOException e) { 
+            System.out.println("error: "+ e.getMessage());
         }
     }
 }
