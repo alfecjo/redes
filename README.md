@@ -2,44 +2,44 @@
 ![redes](redes.jpg)
 
 ## Este material foi desenvolvido em resposta a disciplina 'Redes', a qual faz parte do curso de Pós Graduação em Tecnologia Java, ministrado pela Universidade Tecnológica Federal do Paraná.
-🎉 Os projetos, são exercícios solicitados ao longo do curso que juntos perfazem a nota que compõem a média final.
+🎉 Os projetos estão distribuídos nos branch's e são exercícios solicitados ao longo do curso que juntos perfazem a nota que compõem a média final.
 
-🥋 Se você está entrando no Java agora, vou deixar um comentário apenas para orientá-lo, caso considere o código deste exercício estranho. Este exercício, foi considerado pelo professor e os demais colegas como HARD. (_😎tirei nota máxima_), contudo, o assunto aqui é REDES. Isso, por si só, não é nada convencional para desenvolvedores acostumados com devWeb. Caso se identifique, considere que REDES é uma potencialidade do Java explorada por poucos, más que pode perfeitamente unir forças com o desenvolvimento web. É perfeitamente possível que uma aplicação Java-Swing + Java-Spring, possua funcionalidades associadas as bibliotecas de REDE (lan - local area network), inclusive RMI para aumentar sua eficiência.
+🥋 Se você está entrando no Java agora, vou deixar um comentário apenas para orientá-lo, caso considere o código deste exercício estranho. Este exercício, foi considerado pelo professor e os demais colegas como HARD. (_😎tirei nota máxima_), contudo, o assunto aqui é REDES. Isso, por si só, não é nada convencional para desenvolvedores acostumados com DevWeb. Caso se identifique, considere que REDES é uma potencialidade do Java explorada por poucos, más que pode perfeitamente unir forças com o desenvolvimento web. É perfeitamente possível que uma aplicação Java-Swing + Java-Spring, possua funcionalidades associadas as bibliotecas de REDE (lan - local area network), inclusive RMI para aumentar sua eficiência.
 
 ## Servidor de Redes
 
-😵 Objetivo:
+### 😵 Objetivo:
 
 Neste ponto, vamos abordar o conceito de Java RMI (Remote Method Invocation) relacionado à programação de redes..
 
-🧭 Conceito:
+### 🧭 Conceito:
 Java RMI (Remote Method Invocation) é uma tecnologia Java que permite a execução de métodos em objetos que residem em máquinas remotas, proporcionando assim a comunicação entre processos distribuídos em uma rede. Com o RMI, você pode invocar métodos de objetos remotos da mesma forma que invoca métodos locais.
 
-- Interface Remota:
-Define a interface que contém os métodos que podem ser chamados remotamente.
-Deve estender a interface java.rmi.Remote e cada método deve lançar java.rmi.RemoteException.
+✔️ Interface Remota:
+    - Define a interface que contém os métodos que podem ser chamados remotamente.
+    - Deve estender a interface java.rmi.Remote e cada método deve lançar java.rmi.RemoteException.
 
-- Implementação Remota:
-Implementa a interface remota.
-Herda da classe java.rmi.server.UnicastRemoteObject.
+✔️ Implementação Remota:
+    - Implementa a interface remota.
+    - Herda da classe java.rmi.server.UnicastRemoteObject.
 
-- Servidor RMI:
-Registra uma instância do objeto remoto para torná-lo acessível para os clientes.
-Usa a classe java.rmi.registry.Registry para registrar objetos remotos.
+✔️ Servidor RMI:
+    - Registra uma instância do objeto remoto para torná-lo acessível para os clientes.
+    - Usa a classe java.rmi.registry.Registry para registrar objetos remotos.
 
-- Cliente RMI:
-Obtém uma referência para o objeto remoto no registro.
-Usa a referência para chamar métodos remotos.
+✔️ Cliente RMI:
+    - Obtém uma referência para o objeto remoto no registro.
+    - Usa a referência para chamar métodos remotos.
 
-### Passos Gerais para Usar RMI:
+### 👨‍💻 Passos Gerais para Usar RMI:
 1. Defina a Interface Remota: Crie uma interface que estenda Remote e declare os métodos que podem ser chamados remotamente.
 2. Implemente a Interface: Implemente a interface remota em uma classe que herde de UnicastRemoteObject.
 3. Crie o Servidor: No servidor, crie uma instância da implementação remota, registre-a no registro RMI e aguarde por chamadas remotas.
 4. Crie o Cliente: No cliente, obtenha uma referência para o objeto remoto do registro RMI e chame os métodos remotos normalmente.
 5. Inicie o Registry: Certifique-se de iniciar o registro RMI (ou usar um já em execução) antes de executar o servidor e cliente.
 
-## Enunciado da atividade
-👉 Desenvolva uma aplicação baseado na situação-problema: uma cidade está realizando uma eleição. Você é o desenvolvedor que projetará uma aplicação capaz de receber os votos de cada urna espalhada na cidade. Muita atenção neste trecho do enunciado. Estamos emulando uma eleição real. Tal como as urnas eletrônicas funcionam. Lembre-se que programas existem para solucionar situações da vida real, utilizando estudos de caso na vida real. 
+## 👉 Enunciado da atividade
+Desenvolva uma aplicação baseado na situação-problema: uma cidade está realizando uma eleição. Você é o desenvolvedor que projetará uma aplicação capaz de receber os votos de cada urna espalhada na cidade. Muita atenção neste trecho do enunciado. Estamos emulando uma eleição real. Tal como as urnas eletrônicas funcionam. Lembre-se que programas existem para solucionar situações da vida real, utilizando estudos de caso na vida real. 
 
 Assim, pede-se:
 
