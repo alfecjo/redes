@@ -102,7 +102,7 @@ public class ServidorEleicao extends UnicastRemoteObject implements ServicoEleic
 
             ServidorEleicao servidor = new ServidorEleicao();
             java.rmi.registry.LocateRegistry.createRegistry(1099);
-            java.rmi.Naming.rebind("//192.168.0.145/eleicao", servidor);
+            java.rmi.Naming.rebind("//localhost/eleicao", servidor);
             System.out.println("Servidor pronto para receber votos.");
         } catch (IOException e) { 
             System.out.println("error: "+ e.getMessage());
