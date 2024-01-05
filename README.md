@@ -40,6 +40,10 @@ Usa a referência para chamar métodos remotos.
 ## Enunciado da atividade
 👉 Desenvolva uma aplicação em que um cliente, utilizando tecnologia Java RMI (Remote Method Invocation), possa executar uma calculadora com as quatro operações básicas, sendo que os cálculos sejam executados pelo Cliente de forma remota...
 
+### 📽️ Click na imagem e assista ao vídeo de apresentação do Projeto..     
+
+[![Assista ao Vídeo de Apresentação dos Testes](https://img.youtube.com/vi/nl5RILbI7jw/maxresdefault.jpg)](https://www.youtube.com/watch?v=nl5RILbI7jw)
+
 # Tecnologia utilizada:
 
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
