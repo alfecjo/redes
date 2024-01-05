@@ -38,7 +38,7 @@ Utilize a figura abaixo como modelo para o cliente:
 
 ### 📽️ Click na imagem e assista ao vídeo de apresentação do Projeto..     
 
-[![Assista ao Vídeo de Apresentação do Projeto](https://img.youtube.com/vi/PJtNP1eVCBM/maxresdefault.jpg)](https://www.youtube.com/watch?v=PJtNP1eVCBM)
+[![Assista ao Vídeo de Apresentação do Projeto](https://img.youtube.com/vi/_QFRFS94zQI/maxresdefault.jpg)](https://www.youtube.com/watch?v=_QFRFS94zQI)
 
 # Tecnologia utilizada:
 
