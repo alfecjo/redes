@@ -42,7 +42,7 @@ Usa a referência para chamar métodos remotos.
 
 ### 📽️ Click na imagem e assista ao vídeo de apresentação do Projeto..     
 
-[![Assista ao Vídeo de Apresentação dos Testes](https://img.youtube.com/vi/nl5RILbI7jw/maxresdefault.jpg)](https://www.youtube.com/watch?v=nl5RILbI7jw)
+[![Assista ao Vídeo de Apresentação do Projeto](https://img.youtube.com/vi/nl5RILbI7jw/maxresdefault.jpg)](https://www.youtube.com/watch?v=nl5RILbI7jw)
 
 # Tecnologia utilizada:
 
