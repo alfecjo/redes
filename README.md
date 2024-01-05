@@ -3,14 +3,14 @@
 ## Este material foi desenvolvido em resposta a disciplina 'Redes', a qual faz parte do curso de Pós Graduação em Tecnologia Java, ministrado pela Universidade Tecnológica Federal do Paraná.
 🎉 Os projetos, são exercícios solicitados ao longo do curso que juntos perfazem a nota que compõem a média final.
 
-🥋 Se você está entrando no Java agora, vou deixar um comentário apenas para orientá-lo, caso considere o código deste exercício estranho. Este exercício, foi considerado pelo professor e os demais colegas como MEDIANO. (_😎tirei nota máxima_), contudo, o assunto aqui é REDES. Isso, por si só, não é nada convencional para desenvolvedores acostumados com devWeb. Caso se identifique, considere que REDES é uma potencialidade do Java explorada por poucos, más que pode perfeitamente unir forças com o desenvolvimento web. É perfeitamente possível que uma aplicação Java-Swing possua funcionalidades associadas as bibliotecas de REDE (lan - local area network) para aumentar sua eficiência.
+🥋 Se você está entrando no Java agora, vou deixar um comentário apenas para orientá-lo, caso considere o código deste exercício estranho. Este exercício, foi considerado pelo professor e os demais colegas como MEDIANO. (_😎tirei nota máxima_), contudo, o assunto aqui é REDES. Isso, por si só, não é nada convencional para desenvolvedores acostumados com DevWeb. Caso se identifique, considere que REDES é uma potencialidade do Java explorada por poucos, más que pode perfeitamente unir forças com o desenvolvimento web. É perfeitamente possível que uma aplicação Java-Swing possua funcionalidades associadas as bibliotecas de REDE (lan - local area network) para aumentar sua eficiência, bem como uma aplicação Java Spring se estenda até redes.
 
 ## Servidor de Redes que aceita várias conexões simultaneamente
 
 😵 Objetivo:
 
-Neste ponto do curso vamos abordar o conceito de uma aplicação Cliente-Servidor e explicar como ele está relacionado à programação de redes. Na verdade, trata-se do exercício da branch servidor-redes, contudo, esta versão foi alterada para receber conexões de múltiplas aplicações que estejam conectadas a ela. 
-O foco na branch servidor-redes é que a aplicação recebe apenas uma conexão por vez e para que receba outra, a primeira deve ser fechada. Nesta branch, o número de conexões está sujeito a quantidade de memória.
+Neste ponto do curso vamos abordar o conceito de uma aplicação Cliente-Servidor e explicar como ele está relacionado à programação de redes. Na verdade, trata-se do exercício da branch servidor-redes, o qual foi alterado para receber conexões de múltiplas aplicações que estejam conectadas a ela. 
+O foco na branch servidor-rede-multiplas-conexoes, com uso de ServerSocket, foi construido para permitir um número máximo de threads concorrentes igual a 10. Más, poderia muito bem ser limitado pela quantidade de memória, haja visto que quêm desenvolve estipula este valor.
 
 🧭 Sobre a aplicação...
  Uma aplicação Swing Cliente-Servidor envolve a criação de uma interface gráfica de usuário (GUI) usando a biblioteca Swing no lado do cliente e a implementação de um servidor que recebe e processa solicitações do cliente. Vamos dividir isso em duas partes, Cliente e Servidor.
@@ -38,6 +38,8 @@ reservadas.
 
 Utilize a figura abaixo como modelo para o cliente:
 ![swing](./swing.jpg)
+
+PJtNP1eVCBM
 
 # Tecnologia utilizada:
 
